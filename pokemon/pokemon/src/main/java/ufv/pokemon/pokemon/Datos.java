@@ -14,14 +14,14 @@ public class Datos {
     private int speedDefense;
     private int speed;
     private int generation;
-    private Boolean legendary;
+    private String legendary;
 
 public  Datos(){}
 
     public Datos(int id, int numero, String name, String tipo1,
                  String tipo2, int total, int hp, int attack,
                  int defense, int speedAttack, int speedDefense,
-                 int speed, int generation, Boolean legendary) {
+                 int speed, int generation, String legendary) {
         this.id = id;
         this.numero = numero;
         this.name = name;
@@ -142,11 +142,11 @@ public  Datos(){}
         this.generation = generation;
     }
 
-    public Boolean getLegendary() {
+    public String getLegendary() {
         return legendary;
     }
 
-    public void setLegendary(Boolean legendary) {
+    public void setLegendary(String legendary) {
         this.legendary = legendary;
     }
 
